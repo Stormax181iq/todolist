@@ -1,0 +1,94 @@
+:root {
+  --main-color: #10292F;
+  --main-bg-color: #dce3e8;
+  --third-color: #2698f0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input Panel */
+#input-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.input-panel-item {
+  background-color: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.30)
+}
+
+button.input-panel-item {
+  height: 2rem;
+  border-left: none;
+}
+
+button.input-panel-item:hover {
+  background-color: var(--main-bg-color);
+}
+
+textarea.input-panel-item {
+  height: 1.625rem;
+  width: 20rem;
+  border-right: none;
+  font-size: 20px;
+  resize: none;
+}
+
+/* Output Panel */
+#output-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.task>p {
+  color: var(--main-color);
+  font-size: 1.2rem;
+  width: 10rem;
+  margin-right: 0.4rem;
+  padding: 0.5rem 0;
+}
+
+.task>.edit-button,
+.task>.delete-button {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: whitesmoke;
+  border: none;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: var(--main-bg-color);
+}
+
+.task {
+  background-color: whitesmoke;
+  display: flex;
+  margin: 0.2rem 0;
+  width: 18rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* Icons */
+.fas.fa-check,
+.fas.fa-pen {
+  color: var(--third-color);
+}
+
+.fas.fa-trash {
+  color: #DF114F;
+}
